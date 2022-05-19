@@ -11,8 +11,10 @@ pip install pynput
 pip install PyAudio
 
 # How to use
-Use eng keyboard on windows. If keyboard is RU, assistant will use only numbers. Recommend to use quickcast in dota
+Use eng keyboard on windows. If keyboard is RU, assistant will use only numbers. Recommend to use quickcast in Dota 2
+
 run python main.py
+
 When you need to cast spell:
 1) use page_up (bind some your mouse key to page_up!)
 
