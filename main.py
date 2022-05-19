@@ -7,8 +7,8 @@ import speech_recognition as sr
 from pynput.keyboard import Controller
 from pynput.keyboard import Listener
 
-import dotaVoiceAssistant.invoker as invoker
-import dotaVoiceAssistant.sf as sf
+import invoker as invoker
+import sf as sf
 
 p = pyaudio.PyAudio()
 for i in range(p.get_device_count()):
