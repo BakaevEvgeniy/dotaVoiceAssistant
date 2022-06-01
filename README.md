@@ -1,7 +1,7 @@
 # Dota Voice Assistant
-Dota 2 Voice assistant 
+MVP of Dota 2 Voice assistant 
 
-# Install
+## Install
 TODO: requirements.txt, and virtualenv
 
 pip install SpeechRecognition
@@ -10,13 +10,17 @@ pip install pynput
 
 pip install PyAudio
 
-# How to use
-Use eng keyboard on windows. If keyboard is RU, assistant will use only numbers. Recommend to use quickcast in Dota 2
+## How to use
+Use eng keyboard on Windows. If keyboard is RU, assistant will use only numbers. Recommend to use quickcast in Dota 2
 
-run python main.py
+Run:
+```
+python3 main.py
+```
+
 
 When you need to cast spell:
-1) use page_up (bind some your mouse key to page_up!)
+1) use pageUp (bind some your mouse key to pageUp! In the release it will be possible to select a specific activation button)
 
 2) call key or word. Each char in word will be used as key if char is one of ["q", "w", "e","r","d","f","v","c","x", "t", "1", "2", "3", "4", "5", "6", "7", "8", "9"]. 
 (For RU: Пара "x": "y" означает, что по русской x будет использоваться клавиша y. Пары: ["в": "w", "е": "e", "и": "e", "д": "d", "ф": "f", "р" : "r", "я" : "q"]).
