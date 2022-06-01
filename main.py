@@ -20,14 +20,16 @@ m = sr.Microphone()
 
 keyboard = Controller()
 
-def loop():
-    global c
+isAssistantActivated = False
+
+def listenAndCast():
+    global isAssistantActivated
     while True:
-        if c == True:
+        if isAssistantActivated == True:
             with m as source:
 
                 print("say something")
-                c = False
+                isAssistantActivated = False
                 audio = r.listen(source, phrase_time_limit = 1.5)
                 strt = time.time()
                 try:
@@ -72,14 +74,13 @@ def loop():
                     print("errpr: {0}".format(e))
 
 
-c = False
 def on_press(key):
-    global c
-    if key == keyboard._Key.page_up and c == False:
-        c = True
+    global isAssistantActivated
+    if key == keyboard._Key.page_up and isAssistantActivated == False:
+        isAssistantActivated = True
 
 with Listener(on_press=on_press) as listener:
-    x = Thread(target=loop,)
+    x = Thread(target=listenAndCast,)
     x.start()
     x.join()
     listener.join()  
