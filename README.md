@@ -32,3 +32,6 @@ For example, if you say: "funny friends" assistant will cast ffred.
 Можно использовать сразу несколько фраз, например: снег камень
 
 5) Have fun!
+
+[![CodeFactor](https://www.codefactor.io/repository/github/bakaevevgeniy/dotavoiceassistant/badge)](https://www.codefactor.io/repository/github/bakaevevgeniy/dotavoiceassistant)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9b74ca160ff841d78942e5bb56f4819d)](https://www.codacy.com/gh/BakaevEvgeniy/dotaVoiceAssistant/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BakaevEvgeniy/dotaVoiceAssistant&amp;utm_campaign=Badge_Grade)
