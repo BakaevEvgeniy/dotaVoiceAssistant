@@ -2,13 +2,11 @@
 MVP of Dota 2 Voice assistant 
 
 ## Install
-TODO: requirements.txt, and virtualenv
 
-pip install SpeechRecognition
-
-pip install pynput
-
-pip install PyAudio
+For install run:
+```
+python3 -m pip install -r requirements.txt
+```
 
 ## How to use
 Use eng keyboard on Windows. If keyboard is RU, assistant will use only numbers. Recommend to use quickcast in Dota 2
